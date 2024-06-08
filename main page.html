@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="ajax.js"></script>
+  <script src="jquery1.js"></script>
+  <script src="jquery2.js"></script>
+  
+
+</head>
+
+<body>
+  <div class="container">
+    <img src="lightlogo.png" alt="Logo" height="75" width="225">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#watchlist">Watchlist</a></li>
+          <li><a href="#calculator">Calculator</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#todo">To-Do</a></li>
+        </ul>
+      </nav>
+    
+    <main id="main-content">
+      <section id="home">
+        <h1>Welcome!</h1>
+        <p><i><b>this page is made by </b></i>Alphiaverta Kristiara</p>
+        <p><i><b>student id </b></i>1301213472</p>
+        <p><i><b>class of </b></i>IF-45-03</p><br>
+            <div class="button-container">
+              <!-- <button onclick="changeAlignment()">Change Alignment</button> -->
+              <button onclick="DarkMode()">Change to Dark Mode</button>
+              <button onclick="LightMode()">Change to Light Mode</button>
+            </div>
+      </section>
+
+      <section id="watchlist">
+        <h1>These are the movies/series that I've finished watching in 2024!</h1>
+        <div class="content">
+          <div class="image">
+              <a href="https://youtu.be/wS_qbDztgVY?si=zdKMDK6BVytHJDXG"><p><b>The Marvels</b></p></a>
+              <a href="https://youtu.be/wS_qbDztgVY?si=zdKMDK6BVytHJDXG"><img src="the marvels.jpeg" alt="Image 1"></a>
+              <p>⭐⭐⭐⭐</p>
+          </div>
+          <div class="image">
+              <a href="https://youtu.be/s_76M4c4LTo?si=p7S1cOMYtpVYf2oQ"><p><b>Madame Web</b></p></a>
+              <a href="https://youtu.be/s_76M4c4LTo?si=p7S1cOMYtpVYf2oQ"><img src="madame web.jpg" alt="Image 2"></a>
+              <p>⭐⭐</p>
+          </div>
+          <div class="image">
+            <a href="https://youtu.be/UGc5Tzz19UY?si=fbv3EnT97SOh6HKO"><p><b>Aquaman and The Lost Kingdom</b></p></a>
+            <a href="https://youtu.be/UGc5Tzz19UY?si=fbv3EnT97SOh6HKO"><img src="aquaman2.jpg" alt="Image 3"></a>
+            <p>⭐⭐⭐⭐</p>
+          </div>
+          <div class="image">
+            <a href="https://youtu.be/PbonP4RFM8A?si=2DhqKEQEE3wSgwUL"><p><b>Marry My Husband</b></p></a>
+            <a href="https://youtu.be/PbonP4RFM8A?si=2DhqKEQEE3wSgwUL"><img src="marry my husband.jpg" alt="Image 1"></a>
+            <p>⭐⭐⭐⭐</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="calculator">
+        <h1>Odd Values Calculator</h1>
+            <div class="button-container">
+                <label for="min">Min:</label>
+                <input type="number" id="min" placeholder="enter min value here"><br><br>
+                <label for="max">Max:</label>
+                <input type="number" id="max" placeholder="enter max value here"><br><br>
+                <button onclick="sumGenap()">Calculate</button>
+            </div>
+            <p id="result"></p>
+      </section>
+
+      <section id="quiz">
+        <h1 class="form" >This is just a random quiz ^^</h1>
+        <div class="quiz">
+          <h2 id="question"> Question goes here</h2>
+          <div id="answer-button">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
+          <button id="next-button">Next</button>
+        </div>
+        <script src="quiz_utube.js"></script>
+    </section>
+    
+    <section id="todo">
+      <h1><img src="todo.png" style="width: 30px;"> To-Do List</h1>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your to-do list">
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ull id="list-container">
+        <!-- <li class="checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+      </ull>
+      <script src="todo_utube.js"></script>
+    </section>
+
+    </main>
+  </div>
+</body>
+</html>
